@@ -433,7 +433,7 @@ def get_response(handler, session_name):
         system_date = session['system_date']
         if not system_date:
             raise exception_response(500,
-                                     title="slave session {0} not available for scenario {1}".format(
+                                     title="subordinate session {0} not available for scenario {1}".format(
                                          session_name, scenario_key))
 
         session['ext_cache'] = user_cache
